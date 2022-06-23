@@ -71,4 +71,10 @@
 
     //第二步:根据提交ID还原到指定版本
     git reset --hard 版本id
+
+    //第三步:在旧版本中查看所有版本历史
+    git reflog --pretty=oneline
+
+    //第四步:根据提交ID还原到最新版本
+    git reset --hard 版本id
     
