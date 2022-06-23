@@ -68,3 +68,7 @@
     #回退到指定版本
     //第一步:在一行上展示所有的提交历史
     git log --pretty=oneline
+
+    //第二步:根据提交ID还原到指定版本
+    git reset --hard 版本id
+    
