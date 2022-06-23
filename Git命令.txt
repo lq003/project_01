@@ -77,4 +77,9 @@
 
     //第四步:根据提交ID还原到最新版本
     git reset --hard 版本id
-    
+
+
+//Git上传到Github
+生成SSH key
+ssh-keygen -t rsa -b 4096 -C "774213094@qq.com"
+连续敲三次回车，文件生成C:\Users\用户文件夹\.ssh目录生成id_rsa和id_rsa.pub
