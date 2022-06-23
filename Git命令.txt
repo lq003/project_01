@@ -46,8 +46,25 @@
     git commit -a -m "描述信息"
 
     #移除文件
-    1)从Git仓库和工作区中同时移除文件
-    git rm -f 文件名.后缀
+        1)从Git仓库和工作区中同时移除文件
+        git rm -f 文件名.后缀
+        2)只从Git仓库中移除文件
+        git rm --cached 文件名.后缀
 
-    2)只从Git仓库中移除文件
-    git rm --cached 文件名.后缀
+    #忽略文件
+    创建.gitignore配置文件，列出需要忽略的文件
+
+    #查看提交历史
+        1）查看所有提交历史，最近提交排在最上面
+        git log
+        2)只展示最新的几条提交历史 
+        git log -2
+        3)在一行上展示最近几条条提交历史的信息
+        git log -3 --pretty=oneline
+        4)自定义输出格式
+        %h 提交的简写哈希值 %an 作者 %ar作者修订日期，按多久以前的方式显示 %s提交说明
+        git log -3 --pretty=format:"%h |%an |%ar |%s"
+
+    #回退到指定版本
+    //第一步:在一行上展示所有的提交历史
+    git log --pretty=oneline
