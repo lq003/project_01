@@ -103,3 +103,8 @@ git checkout -b 分支名称
     git checkout master
     2)合并分支
     git merge login
+
+#删除分支
+git branch -d 分支名称
+
+#遇到冲突时的分支合并
